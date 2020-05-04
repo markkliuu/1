@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.EventEditController">
+   <children>
+      <ButtonBar layoutX="169.0" layoutY="21.0" prefHeight="69.0" prefWidth="402.0">
+        <buttons>
+            <Button fx:id="event_menu_button" mnemonicParsing="false" onAction="#handleGoToEvent" text="Events" />
+            <Button fx:id="book_button" layoutX="42.0" layoutY="31.0" mnemonicParsing="false" onAction="#handleGoToGuestBook" text="Guest Book" />
+            <Button fx:id="account_button" mnemonicParsing="false" onAction="#handleGoTo" text="Account" />
+          <Button fx:id="help_button" mnemonicParsing="false" onAction="#gotoHelp" text="Help" />
+        </buttons>
+       
+      </ButtonBar>
+      
+      <Button fx:id="eventBack" layoutX="20.0" layoutY="14.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="56.0" text="&lt; Back" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e0e0e0" height="268.0" layoutX="30.0" layoutY="103.0" stroke="#bcbcbc" strokeType="INSIDE" width="630.0" />
+      <ImageView fitHeight="48.0" fitWidth="39.0" layoutX="47.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/blue-calendar-icon-74.png" />
+         </image></ImageView>
+      <DatePicker fx:id="eventDate" layoutX="102.0" layoutY="165.0" />
+      <Text layoutX="76.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" underline="true">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="80.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details:" underline="true">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="75.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Schedule:" underline="true" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="75.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(If Applicable)" underline="true" wrappingWidth="100.0">
+         <font>
+            <Font name="Tahoma" size="10.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="eventAddGuest" accessibleRole="BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="39.0" layoutX="322.0" layoutY="121.0" stroke="WHITE" strokeType="INSIDE" width="136.0" />
+      <Text fill="#2196f3" layoutX="329.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add / Modify Guests" />
+      <Text fill="#2f2f2f" layoutX="500.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Download PDF Invitation" />
+      <Text fill="#2e2e2e" layoutX="500.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Download PDF Runsheet" wrappingWidth="154.08071899414062" />
+      <PieChart fx:id="eventPie" layoutX="451.0" layoutY="190.0" prefHeight="92.0" prefWidth="81.0" title="HERE IS A PIE CHART" />
+      <Rectangle fx:id="eventDelete" accessibleRole="BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="39.0" layoutX="472.0" layoutY="306.0" stroke="WHITE" strokeType="INSIDE" width="91.0" />
+      <Button fx:id="eventSave" layoutX="577.0" layoutY="306.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="56.0" text="Save" textFill="WHITE" />
+      <Text fill="#2196f3" layoutX="483.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clear event" wrappingWidth="67.34114074707031" />
+      <Text fill="#4caddd" layoutX="48.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Events Go" wrappingWidth="120.84228515625">
+         <font>
+            <Font name="Tahoma Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#f89430" layoutX="119.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" wrappingWidth="15.84228515625">
+         <font>
+            <Font name="Tahoma Bold" size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

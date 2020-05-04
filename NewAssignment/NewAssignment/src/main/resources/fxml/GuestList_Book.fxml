@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.GuestList_BookController">
+   <children>
+      <AnchorPane layoutX="13.0" layoutY="114.0" prefHeight="272.0" prefWidth="574.0" style="-fx-background-color: #e8e4e3#e8e4e3;">
+         <children>
+            <TextField fx:id="inputFN" layoutX="466.0" layoutY="64.0" prefHeight="27.0" prefWidth="102.0" />
+            <Button fx:id="GL_addnewguest" layoutX="453.0" layoutY="193.0" mnemonicParsing="false" onAction="#addNewGuest" style="-fx-background-color: #635b4e#635b4e;" text="Add New Guest" textFill="WHITE" />
+            <Button fx:id="GL_save" layoutX="419.0" layoutY="231.0" mnemonicParsing="false" style="-fx-background-color: #119cf2#119cf2;" text="Save Entire GuestList" />
+            <Button fx:id="GL_addmodifyguest" layoutX="211.0" layoutY="16.0" mnemonicParsing="false" text="Add/Modify Guests" textFill="#119cf2" />
+            <ImageView fitHeight="32.0" fitWidth="29.0" layoutX="7.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/1111.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="425.0" layoutY="29.0" text="Add New Guest" />
+            <Label layoutX="392.0" layoutY="68.0" text="First Name" />
+            <Label layoutX="393.0" layoutY="108.0" text="Last Name " />
+            <Label layoutX="411.0" layoutY="149.0" text="Email " />
+            <Label layoutX="219.0" layoutY="50.0" text="Add Existing Events" />
+            <Label layoutX="54.0" layoutY="56.0" text="Guest List" />
+            <Label layoutX="43.0" layoutY="16.0" text="EventName " />
+            <Separator layoutX="176.0" layoutY="48.0" orientation="VERTICAL" prefHeight="200.0" style="-fx-background-color: #362020;">
+               <effect>
+                  <Glow level="0.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Separator>
+            <Separator layoutX="376.0" layoutY="48.0" orientation="VERTICAL" prefHeight="200.0" style="-fx-background-color: #362020;">
+               <effect>
+                  <Glow level="0.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Separator>
+            <TextField fx:id="inputLN" layoutX="466.0" layoutY="106.0" prefHeight="27.0" prefWidth="102.0" />
+            <TextField fx:id="inputEmail" layoutX="466.0" layoutY="144.0" prefHeight="27.0" prefWidth="102.0" />
+            <Label fx:id="insertTip" layoutX="380.0" layoutY="9.0" prefHeight="22.0" prefWidth="190.0" textFill="#34c617">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <TableView fx:id="guestDetail" layoutX="190.0" layoutY="76.0" prefHeight="178.0" prefWidth="174.0">
+              <columns>
+                <TableColumn fx:id="code" prefWidth="75.0" text="Code" />
+                <TableColumn fx:id="email" prefWidth="75.0" text="Email" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="25.0" layoutY="45.0" />
+      <Button fx:id="GL_events" layoutX="318.0" layoutY="57.0" mnemonicParsing="false" onAction="#gotoEvents" text="Home" />
+      <Button fx:id="GL_username" layoutX="405.0" layoutY="57.0" mnemonicParsing="false" text="Profile" />
+      <Button fx:id="GL_help" layoutX="492.0" layoutY="57.0" mnemonicParsing="false" onAction="#gotoHelp" text="Help" />
+      <Text fill="#4caddd" layoutX="26.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Events Go" wrappingWidth="120.84228515625">
+         <font>
+            <Font name="Tahoma Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#f89430" layoutX="96.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" wrappingWidth="15.84228515625">
+         <font>
+            <Font name="Tahoma Bold" size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

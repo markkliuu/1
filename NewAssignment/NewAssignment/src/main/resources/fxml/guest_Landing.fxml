@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Guest_LandingController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c2c9d0" height="122.0" layoutX="330.0" layoutY="256.0" stroke="BLACK" strokeType="INSIDE" width="138.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c2c9d0" height="122.0" layoutX="328.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" width="138.0" />
+      <Text fill="#4caddd" layoutX="38.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Events Go" wrappingWidth="120.84228515625">
+         <font>
+            <Font name="Tahoma Bold" size="22.0" />
+         </font>
+      </Text>
+       <Text fill="#f89430" layoutX="109.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" wrappingWidth="15.84228515625">
+         <font>
+            <Font name="Tahoma Bold" size="22.0" />
+         </font>
+      </Text>
+      <ButtonBar buttonMinWidth="100.0" layoutX="179.0" layoutY="17.0" prefHeight="69.0" prefWidth="402.0">
+        <buttons>
+            <Button fx:id="g_events_button" mnemonicParsing="false" text="Home" />
+            <Button fx:id="g_account_button" mnemonicParsing="false" text="Profile" />
+          <Button fx:id="g_help_button" mnemonicParsing="false" onAction="#gotoHelp" text="Help" />
+        </buttons>
+         <padding>
+            <Insets right="50.0" />
+         </padding>
+      </ButtonBar>
+      <Separator layoutX="33.0" layoutY="77.0" prefHeight="0.0" prefWidth="535.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c2c9d0" height="122.0" layoutX="26.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" width="138.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c2c9d0" height="122.0" layoutX="177.0" layoutY="256.0" stroke="BLACK" strokeType="INSIDE" width="138.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c2c9d0" height="122.0" layoutX="26.0" layoutY="256.0" stroke="BLACK" strokeType="INSIDE" width="138.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c2c9d0" height="122.0" layoutX="177.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" width="138.0" />
+      <Button fx:id="g_event1_button" layoutX="482.0" layoutY="229.0" mnemonicParsing="false" onAction="#goToEvent1Info" text="More Event Info" textAlignment="CENTER" />
+      <Text fx:id="g_event1_name" layoutX="31.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event 1">
+         <font>
+            <Font name="Tahoma" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="g_event5_name" layoutX="183.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event 5">
+         <font>
+            <Font name="Tahoma" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="g_event4_name" layoutX="31.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event 4">
+         <font>
+            <Font name="Tahoma" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="g_event2_name" layoutX="183.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event  2">
+         <font>
+            <Font name="Tahoma" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="g_event6_name" layoutX="340.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event 6">
+         <font>
+            <Font name="Tahoma" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="g_event3_name" layoutX="342.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event 3">
+         <font>
+            <Font name="Tahoma" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="g_date1" layoutX="31.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date 1">
+         <font>
+            <Font name="Arial Italic" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="g_date5" layoutX="184.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date 5">
+         <font>
+            <Font name="Arial Italic" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="g_date2" layoutX="183.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date  2">
+         <font>
+            <Font name="Arial Italic" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="g_date6" layoutX="342.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date 6">
+         <font>
+            <Font name="Arial Italic" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="g_date3" layoutX="342.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date 3">
+         <font>
+            <Font name="Arial Italic" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="g_date4" layoutX="31.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date 4">
+         <font>
+            <Font name="Arial Italic" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#4caddd" layoutX="263.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Events" wrappingWidth="77.84228515625">
+         <font>
+            <Font name="Tahoma" size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="status1" layoutX="31.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status">
+         <font>
+            <Font name="Tahoma Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="status6" layoutX="336.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status">
+         <font>
+            <Font name="Tahoma Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="status3" layoutX="336.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status">
+         <font>
+            <Font name="Tahoma Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="status2" layoutX="186.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status ">
+         <font>
+            <Font name="Tahoma Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="status5" layoutX="186.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status ">
+         <font>
+            <Font name="Tahoma Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="status4" layoutX="31.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status">
+         <font>
+            <Font name="Tahoma Bold" size="10.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

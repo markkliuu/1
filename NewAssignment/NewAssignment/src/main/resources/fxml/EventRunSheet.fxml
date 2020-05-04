@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="App.EventRunSheetController">
+   <children>
+      <Text fill="#4caddd" layoutX="58.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Events Go" wrappingWidth="120.84228515625">
+         <font>
+            <Font name="Tahoma Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#f89430" layoutX="129.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" wrappingWidth="15.84228515625">
+         <font>
+            <Font name="Tahoma Bold" size="22.0" />
+         </font>
+      </Text>
+      <ButtonBar layoutX="189.0" layoutY="41.0" prefHeight="69.0" prefWidth="402.0">
+         <buttons>
+            <Button fx:id="event_menu_button" mnemonicParsing="false" onAction="#gotoadminlanding" text="Events" />
+            <Button fx:id="book_button" layoutX="42.0" layoutY="31.0" mnemonicParsing="false" onAction="#gotoGuestBook" text="Guest Book" />
+            <Button fx:id="account_button" mnemonicParsing="false" text="Account" />
+            <Button fx:id="help_button" mnemonicParsing="false" onAction="#gotoHelp" text="Help" />
+         </buttons>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </ButtonBar>
+      <ListView fx:id="RS" layoutX="307.0" layoutY="133.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="Addrs" layoutX="163.0" layoutY="308.0" mnemonicParsing="false" onAction="#rsAdd" text="Add" />
+      <Text layoutX="67.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event Run Sheet Editor">
+         <font>
+            <Font name="Tahoma" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
